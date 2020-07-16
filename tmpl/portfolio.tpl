@@ -46,7 +46,7 @@ vertical-align: middle;
   width: 100%;
   height: 100%;
   text-align: left;
-  <!-- nadpis na foto -->
+
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding-top: 90%;
