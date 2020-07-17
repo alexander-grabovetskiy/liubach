@@ -120,7 +120,7 @@ margin:0px;
    <div class="row">
       <div class="col s12 m12 l6 xl6 center ">
      
-      <img class="responsive-img" width = 80%  src="img/pic_2.jpg" > 
+      <img class="responsive-img" width = 83%  src="img/pic_2.jpg" > 
       </div>
       
       <div class="col s12 m12 l5 xl5 center   " id="about_text">
