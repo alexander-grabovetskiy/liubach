@@ -11,7 +11,7 @@
     
    #icons{
   
-    padding-right:6.5%;
+    padding-right:8.6%;
    margin-top:-65px;
    <!-- margin-right:-21%; -->
    } 
