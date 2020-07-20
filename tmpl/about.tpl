@@ -21,9 +21,12 @@
   filter: grayscale(100%);
   filter: saturate(0%);
 
-   
-    
     }
+    
+ 
+    
+    
+    
     
     a.icon:hover {
     filter: invert(100%);
@@ -89,16 +92,29 @@ margin:0px;
 }
 
 
-@media screen and (max-width: 1400px)   {
-
-
- 
-   
-    .container {
-  width:100%;
+@media screen and (max-width: 1160px)   {
+ .container {
+ width:100%;
  }
    
 }
+
+@media screen and (max-width: 1400px) and (min-width: 1160px){
+ .container {
+ width:83%;
+
+ }
+ 
+ 
+ <!-- img.responsive-img{ -->
+ <!-- width:77%; -->
+ <!-- } -->
+
+}
+
+
+
+
 
 @media screen and (max-width: 994px)   {
 
