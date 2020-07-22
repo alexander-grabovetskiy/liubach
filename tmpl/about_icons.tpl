@@ -143,11 +143,15 @@ margin:0px;
 
 @media screen and (max-width: 1400px) and (min-width: 1160px){
  .container {
- width:83%;
+ width:71.5%;
 
  }
  
- 
+  #maintext{
+  
+  font-size: 15px;
+  
+  }
  <!-- img.responsive-img{ -->
  <!-- width:77%; -->
  <!-- } -->
