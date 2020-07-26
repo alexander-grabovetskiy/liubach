@@ -9,32 +9,39 @@
    
     }
     
+    .img-svg{
+    height:35px;
+
+    
+    }
+    
+    .img-svg:hover {
+    fill:#dabe82;
+    }
+	
+	svg.img-svg{
+width: 22px;
+ height: 22px;
+
+}
+	
+	
+    
    #icons{
   
     padding-right:8.6%;
-   margin-top:-65px;
+   margin-top:-55px;
+   padding-bottom:15px;
    <!-- margin-right:-21%; -->
    } 
     
     #icon_png{
     margin:2px;
-  filter: grayscale(100%);
-  filter: saturate(0%);
+  <!-- filter: grayscale(100%); -->
+  <!-- filter: saturate(0%); -->
 
     }
-    
- 
-    
-    
-    
-    
-    a.icon:hover {
-    filter: invert(100%);
-    
-   
-   <!-- filter: sepia(30%);  -->
-    }
-    
+  
     
     #about_text{
     font-family: 'Nunito', sans-serif;
@@ -101,11 +108,15 @@ margin:0px;
 
 @media screen and (max-width: 1400px) and (min-width: 1160px){
  .container {
- width:83%;
+ width:71.5%;
 
  }
  
- 
+  #maintext{
+  
+  font-size: 15px;
+  
+  }
  <!-- img.responsive-img{ -->
  <!-- width:77%; -->
  <!-- } -->
@@ -161,10 +172,10 @@ margin:0px;
    <div class="col s12 m12 l5 xl5 center offset-l6 offset-xl6 " id="icons" >  
      
  
-  <a class="icon"  href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img src="img/inst.png" height="35px" id="icon_png" ></img></a>
-  <a class="icon" href="tg://resolve?domain=ksuvadimovna"><img src="img/telega.png" height="35px" id="icon_png" ></img></a>
-    <a class="icon"  href="https://wa.me/79163412270"><img src="img/wats.png" height="35px" id="icon_png" ></img></a>
-      <a class="icon" href="viber://add?number=380501981115" rel="nofollow"><img src="img/viber.png" height="35px" id="icon_png" ></img></a>
+  <a class="icon_4"  href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img class="img-svg" src="img/instagram_1.svg" height="35px" id="icon_png" ></img></a>
+  <a class="icon_4 " href="tg://resolve?domain=ksuvadimovna"><img class="img-svg" src="img/telegram_1.svg" height="35px" id="icon_png" ></img></a>
+    <a class="icon_4 "  href="https://wa.me/79163412270"><img class="img-svg" src="img/whatsapp_3.svg" height="35px" id="icon_png" ></img></a>
+      <a class="icon_4" href="viber://add?number=380501981115" rel="nofollow"><img class="img-svg" src="img/viber_2.svg" height="35px" id="icon_png" ></img></a>
        
              
       
@@ -176,3 +187,21 @@ margin:0px;
       
     </body>
  
+<script>
+$('img.img-svg').each(function(){
+  var $img = $(this);
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+  $.get(imgURL, function(data) {
+    var $svg = $(data).find('svg');
+    if(typeof imgClass !== 'undefined') {
+      $svg = $svg.attr('class', imgClass+' replaced-svg');
+    }
+    $svg = $svg.removeAttr('xmlns:a');
+    if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+    }
+    $img.replaceWith($svg);
+  }, 'xml');
+});
+</script>

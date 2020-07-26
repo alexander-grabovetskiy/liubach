@@ -12,7 +12,9 @@ color: #dabe82;
 
 }
 
-
+.pulse{
+overflow: auto;
+}
 
 .img-responsive{
 
@@ -20,6 +22,17 @@ width: 100%;
 
 }
 
+.img-svg:hover {
+    fill:#dabe82;
+    }
+    
+ .img-svg {
+    fill:white;
+    }   
+    
+a#mail.orang:hover{
+color: #dabe82;
+}
 
 
 #point_1{
@@ -46,6 +59,14 @@ width: 30px;
  height: 30px;
 
 }
+
+svg.img-svg{
+width: 22px;
+ height: 22px;
+
+}
+
+
 
 #kiev {
 font-family: 'Nunito', sans-serif;
@@ -97,8 +118,10 @@ margin-bottom: -15px;
 
 #mail{
 color:white;
-
 }
+
+
+
 
 #card{
 
@@ -243,15 +266,16 @@ margin-bottom: -15px;
 
 
 #icon_png{
+
   filter: grayscale(100%);
   filter: saturate(0%);   
 opacity: 100%;
 }
 
-a.icon:hover {
-    filter: invert(100%);
+<!-- a.icon:hover { -->
+    <!-- filter: invert(100%); -->
     
-  }
+  <!-- } -->
 }
 
   @media screen and (max-width: 3840px) and (min-width: 1750px){
@@ -303,13 +327,13 @@ font-size:20pt;
             <p class="number">Киев<br>            
            
        
-           <a id="mail" href="tel:+380501981115">+380501981115</a><br>
-        <a id="mail" href="mailto:example@mail.com">  example@mail.com</a></p>
+           <a id="mail" class="orang" href="tel:+380501981115">+380501981115</a><br>
+        <a id="mail" class="orang" href="mailto:example@mail.com">  example@mail.com</a></p>
            </span>
            <div class="icons">
   
-  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img src="img/inst.png" height="30px" id="icon_png" ></img></a>
-  <a class="icon" href="viber://add?number=380501981115"><img src="img/viber.png" height="30px" id="icon_png" ></img></a>
+ <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img class="img-svg"  src="img/instagram_1.svg" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="viber://add?number=380501981115"><img class="img-svg"  src="img/viber_2.svg" height="30px" id="icon_png" ></img></a>
   
   
 </div>
@@ -327,12 +351,12 @@ font-size:20pt;
           <p class="number"> Москва<br>            
            
         
-           <a id="mail" href="tel:+79163412270"> +79163412270</a><br>
-           <a id="mail" href="mailto:example@mail.com"> example@mail.com</a></p>
+           <a id="mail" class="orang" href="tel:+79163412270"> +79163412270</a><br>
+           <a id="mail" class="orang" href="mailto:example@mail.com"> example@mail.com</a></p>
           <div class="icons">
-  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img src="img/inst.png" height="30px" id="icon_png" ></img></a>
-  <a class="icon" href="tg://resolve?domain=ksuvadimovna"><img src="img/telega.png" height="30px" id="icon_png" ></img></a>
-    <a class="icon" href="https://wa.me/79163412270"><img src="img/wats.png" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img class="img-svg"  src="img/instagram_1.svg" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="tg://resolve?domain=ksuvadimovna"><img class="img-svg"  src="img/telegram_1.svg" height="30px" id="icon_png" ></img></a>
+    <a class="icon" href="https://wa.me/79163412270"><img class="img-svg"  src="img/whatsapp_3.svg" height="30px" id="icon_png" ></img></a>
   
      </div>    
       
@@ -358,12 +382,12 @@ font-size:20pt;
            
        
            +380501981115<br>
-        <a id="mail"  href="mailto:example@mail.com">  example@mail.com</a></p>
+        <a class="orang"  id="mail"  href="mailto:example@mail.com">  example@mail.com</a></p>
            </span>
            <div class="icons">
   
-  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img src="img/inst.png" height="30px" id="icon_png" ></img></a>
-  <a class="icon" href="viber://add?number=380501981115"><img src="img/viber.png" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img class="img-svg"  src="img/instagram_1.svg" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="viber://add?number=380501981115"><img class="img-svg"  src="img/viber_2.svg" height="30px" id="icon_png" ></img></a>
   
   
 </div>
@@ -382,11 +406,11 @@ font-size:20pt;
            
         
            +79163412270<br>
-           <a id="mail" href="mailto:example@mail.com">example@mail.com</a></p>
+           <a class="orang" id="mail" href="mailto:example@mail.com">example@mail.com</a></p>
           <div class="icons">
-  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img src="img/inst.png" height="30px" id="icon_png" ></img></a>
-  <a class="icon" href="tg://resolve?domain=ksuvadimovna"><img src="img/telega.png" height="30px" id="icon_png" ></img></a>
-    <a class="icon" href="https://wa.me/79163412270"><img src="img/wats.png" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="https://www.instagram.com/ksuvadimovna/?hl=ru"><img class="img-svg"  src="img/instagram_1.svg" height="30px" id="icon_png" ></img></a>
+  <a class="icon" href="tg://resolve?domain=ksuvadimovna"><img class="img-svg"  src="img/telegram_1.svg" height="30px" id="icon_png" ></img></a>
+    <a class="icon" href="https://wa.me/79163412270"><img class="img-svg"  src="img/whatsapp_3.svg" height="30px" id="icon_png" ></img></a>
   
      </div>    
       
@@ -414,5 +438,23 @@ $(window).ready(function(){
     setTimeout ("$('#moskow').show('drop');",1500);
        setTimeout ("$('#kiev_1').show('drop');",1500);
     setTimeout ("$('#moskow_1').show('drop');",1500);
+});
+</script>
+<script>
+$('img.img-svg').each(function(){
+  var $img = $(this);
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+  $.get(imgURL, function(data) {
+    var $svg = $(data).find('svg');
+    if(typeof imgClass !== 'undefined') {
+      $svg = $svg.attr('class', imgClass+' replaced-svg');
+    }
+    $svg = $svg.removeAttr('xmlns:a');
+    if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+    }
+    $img.replaceWith($svg);
+  }, 'xml');
 });
 </script>
